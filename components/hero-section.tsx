@@ -7,22 +7,26 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted pt-14 sm:pt-16"
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6">
+      <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+        <h1 className="font-serif text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
           Namaskaram!
-          <span className="text-primary block">I am Deepika</span>
+          <span className="text-primary block mt-2">I am Deepika</span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-        I’m exploring the world of project management at <a href="https://appmaker.xyz" className="underline">Appmakers.xyz</a> while nurturing my curiosity for UX—crafting digital experiences that connect with people❤️
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed px-2">
+          I'm exploring the world of project management at{" "}
+          <a href="https://appmaker.xyz" className="underline hover:text-primary transition-colors">
+            Appmakers.xyz
+          </a>{" "}
+          while nurturing my curiosity for UX—crafting digital experiences that connect with people❤️
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-3 w-full sm:w-auto text-base font-medium"
             onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
           >
             View My Work
@@ -31,15 +35,15 @@ export function HeroSection() {
           <Button
             variant="outline"
             size="lg"
-            className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3 bg-transparent"
+            className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-6 sm:px-8 py-3 bg-transparent w-full sm:w-auto text-base font-medium"
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
             Get In Touch
           </Button>
         </div>
 
-        <div className="mt-16 animate-bounce">
-          <ArrowDown className="h-6 w-6 text-muted-foreground mx-auto" />
+        <div className="mt-12 sm:mt-16 animate-bounce">
+          <ArrowDown className="h-5 w-5 sm:h-6 sm:w-6 text-muted-foreground mx-auto" />
         </div>
       </div>
     </section>
