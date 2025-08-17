@@ -10,8 +10,7 @@ export function Navigation() {
   const navItems = [
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
-    { name: "Blog", href: "#blog" },
-    { name: "Contact", href: "#contact" },
+    { name: "Connect", href: "#contact" },
   ]
 
   return (
