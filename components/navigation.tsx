@@ -10,7 +10,7 @@ export function Navigation() {
   const navItems = [
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
-    { name: "Blog", href: "#blog" },
+    { /*name: "Blog", href: "#blog" */},
     { name: "Contact", href: "#contact" },
   ]
 
@@ -18,13 +18,12 @@ export function Navigation() {
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm border-b border-border z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="font-serif font-bold text-xl text-primary">Portfolio</div>
+          <div className="font-serif font-bold text-xl text-primary">Deepika SR</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.name}
+              <a key={item.name}
                 href={item.href}
                 className="text-foreground hover:text-accent transition-colors duration-200 font-medium"
               >

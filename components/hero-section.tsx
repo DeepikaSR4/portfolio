@@ -11,13 +11,12 @@ export function HeroSection() {
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-          Creative
-          <span className="text-primary block">Professional</span>
+          Namaskaram!
+          <span className="text-primary block">I am Deepika</span>
         </h1>
 
         <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-          Crafting digital experiences through thoughtful design, clean code, and meaningful storytelling. Welcome to my
-          creative journey.
+        I’m exploring the world of project management at <a href="https://appmaker.xyz" className="underline">Appmakers.xyz</a> while nurturing my curiosity for UX—crafting digital experiences that connect with people❤️
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

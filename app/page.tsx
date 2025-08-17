@@ -13,7 +13,6 @@ export default function Home() {
       <HeroSection />
       <ProjectsSection />
       <ExperienceSection />
-      <BlogSection />
       <ContactSection />
       <Footer />
     </main>

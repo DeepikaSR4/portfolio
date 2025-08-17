@@ -4,36 +4,46 @@ import { Briefcase, Calendar } from "lucide-react"
 
 const experiences = [
   {
-    title: "Senior Frontend Developer",
-    company: "Tech Innovations Inc.",
-    period: "2022 - Present",
+    title: "Associate Product Manager",
+    company: "Lascade LLC",
+    period: "Jan 2025-Jul 2025",
     description:
-      "Leading frontend development for enterprise applications, mentoring junior developers, and implementing modern React patterns.",
-    skills: ["React", "TypeScript", "Next.js", "Team Leadership"],
+      "Own and manage multiple apps, focusing on scaling, retention, and growth. Drive product improvements using data-driven insights and user feedback. Optimize user retention through omnichannel marketing strategies. Ensure high-quality output by collaborating with cross-functional teams. Coordinate with operations to meet deadlines and deliver key milestones.",
+    skills: ["Product Management", "Data-Driven Growth", "User Retention", "Cross-Functional Collaboration"],
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Solutions Co.",
-    period: "2020 - 2022",
+    title: "Product Intern",
+    company: "Lascade LLC",
+    period: "Jul 2024-Dec 2024",
     description:
-      "Developed and maintained full-stack web applications using modern technologies and agile methodologies.",
-    skills: ["Node.js", "React", "PostgreSQL", "AWS"],
+      "Conducted competitor analysis and market research to refine product features. Created Product Requirement Documents (PRDs) and detailed user stories to guide development. Assisted design and development teams in aligning product goals with user needs. Conducted product testing and documented insights for iterative improvements. Analyzed user feedback and translated insights into actionable improvements.",
+    skills: ["Competitor Analysis", "Market Research", "Product Requirement Documents", "User Stories", "User Feedback Analysis"],
   },
   {
-    title: "Frontend Developer",
-    company: "Creative Agency",
-    period: "2018 - 2020",
-    description: "Created responsive websites and interactive experiences for various clients in different industries.",
-    skills: ["JavaScript", "CSS", "Vue.js", "Design Systems"],
+    title: "Mentee - Hyperledger Blockchain Explorer Redesign",
+    company: "Hyperledger Foundation",
+    period: "Jun 2023-Jan 2024",
+    description:
+      "Led quantitative/qualitative user research and competitive audit. Designed wireframes, prototypes, and improved information architecture. Presented progress to the Technical Oversight Committee. Worked with cross-functional teams across the globe. Documented process on Hyperledger Wiki for future use.",
+    skills: ["User Research", "Competitive Audit", "Wireframing", "Prototyping", "Information Architecture", "Cross-Functional Teams"],
   },
   {
-    title: "Junior Developer",
-    company: "StartUp Ventures",
-    period: "2017 - 2018",
-    description: "Started my professional journey building web applications and learning industry best practices.",
-    skills: ["HTML", "CSS", "JavaScript", "Git"],
+    title: "Junior Designer",
+    company: "Product Pack",
+    period: "Mar 2023- Mar 2024",
+    description:
+      "Designed social media assets using Figma in collaboration with cross-functional teams. Conceptualized, created, and delivered final designs based on feedback.",
+    skills: ["Figma", "Design", "Cross-Functional Collaboration"],
   },
-]
+  {
+    title: "UI/UX Design Intern",
+    company: "Starved",
+    period: "Aug 2022",
+    description:
+      "Conducted competitive audits and user research. Designed wireframes and prototypes for mobile apps to improve user experience.",
+    skills: ["Competitive Audits", "User Research", "Wireframing", "Prototyping", "User Experience"],
+  },
+];
 
 export function ExperienceSection() {
   return (
@@ -42,7 +52,7 @@ export function ExperienceSection() {
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">Professional Experience</h2>
           <p className="text-muted-foreground text-lg">
-            My journey through various roles and the skills I've developed along the way.
+          A journey of growth and impact.
           </p>
         </div>
 
