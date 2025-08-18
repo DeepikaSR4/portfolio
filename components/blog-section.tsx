@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 const blogPosts = [
   {
@@ -10,6 +11,7 @@ const blogPosts = [
     date: "March 15, 2024",
     readTime: "5 min read",
     category: "Technology",
+    id: "future-of-web-development-2024",
   },
   {
     title: "Building Accessible User Interfaces: A Comprehensive Guide",
@@ -18,6 +20,7 @@ const blogPosts = [
     date: "March 8, 2024",
     readTime: "8 min read",
     category: "Design",
+    id: "building-accessible-user-interfaces",
   },
   {
     title: "Optimizing React Performance: Tips and Best Practices",
@@ -26,6 +29,7 @@ const blogPosts = [
     date: "February 28, 2024",
     readTime: "6 min read",
     category: "Development",
+    id: "optimizing-react-performance",
   },
 ]
 
@@ -73,14 +77,16 @@ export function BlogSection() {
                 <div className="flex items-center justify-between">
                   <span className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-full">{post.category}</span>
 
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-accent hover:text-accent-foreground hover:bg-accent"
-                  >
-                    Read More
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Button>
+                  <Link href={`/blog/${post.id || "future-of-web-development-2024"}`}>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="text-accent hover:text-accent-foreground hover:bg-accent"
+                    >
+                      Read More
+                      <ArrowRight className="h-4 w-4 ml-2" />
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -88,13 +94,15 @@ export function BlogSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent"
-          >
-            View All Posts
-          </Button>
+          <Link href="/blog">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent"
+            >
+              View All Posts
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
