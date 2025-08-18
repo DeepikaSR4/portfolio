@@ -78,7 +78,7 @@ export function ProjectsSection() {
               key={index}
               className="group hover:shadow-lg transition-all duration-300 border border-border rounded-xl overflow-hidden"
             >
-              <div className="w-full h-48 sm:h-56 overflow-hidden">
+              <div className="w-full aspect-video overflow-hidden bg-muted">
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
