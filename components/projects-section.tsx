@@ -22,13 +22,11 @@ export const projects = [
     githubUrl: "#",
   },
   {
-    title: "Lip-Sync (Final Year Project)",
+    title: "Lip-Sync",
     description:
       "A final-year project bridging audio and video using lip-syncing technology, designed to deliver seamless digital interactions.",
     image: "/lip-sync-project.png",
     technologies: ["Frontend Development", "Image Processing", "Data Analysis"],
-    liveUrl: "https://deepikasr4.web.app/devprojects.html#",
-    githubUrl: "#",
   },
   {
     title: "RupeeX (SHE-HACKS Hackathon)",
@@ -107,10 +105,12 @@ export function ProjectsSection() {
 
                 <div className="flex gap-3">
                   {project.liveUrl && (
-                    <Button size="sm" className="bg-primary hover:bg-primary/90 text-sm">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      View Details
-                    </Button>
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+  <Button size="sm" className="bg-primary hover:bg-primary/90 text-sm">
+    <ExternalLink className="h-4 w-4 mr-2" />
+    View Details
+  </Button>
+</a>
                   )}
                 </div>
               </CardContent>
