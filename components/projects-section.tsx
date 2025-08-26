@@ -3,6 +3,15 @@ import { Button } from "@/components/ui/button"
 import { ExternalLink } from "lucide-react"
 
 export const projects = [
+    {
+    title: "Queen Wash Laundry",
+    description:
+      "An intutive modern website made with latest technologies for Queen Wash Laundry in a short span of time.",
+    image: "/queenwashlaundry.png", // even though code is inside /app/components
+    technologies: ["Web Development", "UI", "Responsive Web"],
+    liveUrl: "https://www.queenwashlaundry.com",
+    githubUrl: "#",
+  },
   {
     title: "Kerala Results Website",
     description:
@@ -15,18 +24,11 @@ export const projects = [
   {
     title: "Ciniflex UX Case Study",
     description:
-      "A detailed UX case study exploring user journeys, wireframing, and prototyping to enhance the Ciniflex platform.",
+      "A detailed UX case study exploring user journeys, wireframing, and prototyping.",
     image: "/ciniflex-case-study.png",
     technologies: ["UX Research", "Wireframing", "Prototyping"],
     liveUrl: "https://www.behance.net/gallery/189407997/Ciniflex",
     githubUrl: "#",
-  },
-  {
-    title: "Lip-Sync",
-    description:
-      "A final-year project bridging audio and video using lip-syncing technology, designed to deliver seamless digital interactions.",
-    image: "/lip-sync-project.png",
-    technologies: ["Frontend Development", "Image Processing", "Data Analysis"],
   },
   {
     title: "RupeeX (SHE-HACKS Hackathon)",

@@ -2,8 +2,36 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
+import { useState, useEffect } from "react"
+
 
 export function HeroSection() {
+  const greetings = [
+  "Hello", 
+  "مرحبا",
+  "你好",       
+  "こんにちは"   ,   
+  "Bonjour",     
+  "Hallo",       
+  "Hola",        
+  "नमस्ते",   
+  "നമസ്ക്കാരം",  
+  "வணக்கம்"
+]
+  const [currentGreeting, setCurrentGreeting] = useState(greetings[0])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentGreeting(prev => {
+        const currentIndex = greetings.indexOf(prev)
+        const nextIndex = (currentIndex + 1) % greetings.length
+        return greetings[nextIndex]
+      })
+    }, 2000) // change greeting every 3 seconds
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section
       id="home"
@@ -11,7 +39,7 @@ export function HeroSection() {
     >
       <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
         <h1 className="font-serif text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-          Namaskaram!
+          {currentGreeting}
           <span className="text-primary block mt-2">I am Deepika</span>
         </h1>
 
@@ -40,10 +68,6 @@ export function HeroSection() {
           >
             Get In Touch
           </Button>
-        </div>
-
-        <div className="mt-12 sm:mt-16 animate-bounce">
-          <ArrowDown className="h-5 w-5 sm:h-6 sm:w-6 text-muted-foreground mx-auto" />
         </div>
       </div>
     </section>

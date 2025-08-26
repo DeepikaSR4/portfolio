@@ -21,7 +21,7 @@ export function ContactSection() {
             </div>
             <div>
               <p className="font-medium text-foreground text-sm sm:text-base">Email</p>
-              <p className="text-muted-foreground text-xs sm:text-base">deepikasanathanan1234@gmail.com</p>
+                <a href="mailto:deepikasanathanan1234@gmail.com?subject=Website%20Inquiry&body=Hi%20Deepika,%0D%0A%0D%0AI%20am%20interested%20in%20having%20a%20website%20developed%20for%20my%20business.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20pricing?%0D%0A%0D%0AThank%20you!"><p className="text-muted-foreground text-xs sm:text-base">deepikasanathanan1234@gmail.com</p></a>
             </div>
           </div>
 
