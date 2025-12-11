@@ -38,17 +38,11 @@ export function HeroSection() {
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted pt-14 sm:pt-16"
     >
       <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-        <h1 className="font-serif text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-          {currentGreeting}
-          <span className="text-primary block mt-2">I am Deepika</span>
+        <h1 className="font-serif text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
+        Fix the UX. Keep the users.
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed px-2">
-          I'm exploring the world of project management at{" "}
-          <a href="https://appmaker.xyz" className="underline hover:text-primary transition-colors">
-            Appmakers.xyz
-          </a>{" "}
-          while nurturing my curiosity for UX—crafting digital experiences that connect with people❤️
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed px-2"> I help growing products improve their most critical flows — onboarding, checkout, and retention. Through UX audits and actionable fixes, I make experiences smoother, faster, and harder to quit.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
@@ -57,16 +51,7 @@ export function HeroSection() {
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-3 w-full sm:w-auto text-base font-medium"
             onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
           >
-            View My Work
-          </Button>
-
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-6 sm:px-8 py-3 bg-transparent w-full sm:w-auto text-base font-medium"
-            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-          >
-            Get In Touch
+           Let’s Fix Your UX Leaks
           </Button>
         </div>
       </div>

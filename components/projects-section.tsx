@@ -76,15 +76,13 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group hover:shadow-lg transition-all duration-300 border border-border rounded-xl overflow-hidden"
+              className="group hover:shadow-lg transition-all duration-300 border border-border rounded-xl overflow-hidden p-0"
             >
-              <div className="w-full aspect-video overflow-hidden bg-muted">
-                <img
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+              <img
+                src={project.image || "/placeholder.svg"}
+                alt={project.title}
+                className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover block rounded-t-xl"
+              />
 
               <CardHeader className="pt-4 pb-2 px-4 sm:px-6">
                 <CardTitle className="text-primary font-serif text-lg sm:text-xl">{project.title}</CardTitle>
