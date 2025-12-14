@@ -1,20 +1,21 @@
-import { Navigation } from "@/components/navigation"
-import { HeroSection } from "@/components/hero-section"
-import { ProjectsSection } from "@/components/projects-section"
-import { ExperienceSection } from "@/components/experience-section"
-import { BlogSection } from "@/components/blog-section"
-import { ContactSection } from "@/components/contact-section"
-import { Footer } from "@/components/footer"
+import { MinimalNav } from "@/components/minimal-nav"
+import { EditorialHero } from "@/components/editorial-hero"
+import { ExpertiseSection } from "@/components/expertise-section"
+import { EditorialProjects } from "@/components/editorial-projects"
+import { ServicesSection } from "@/components/services-section"
+import { AboutSection } from "@/components/about-section"
+import { CtaSection } from "@/components/cta-section"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navigation />
-      <HeroSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <ContactSection />
-      <Footer />
+      <MinimalNav />
+      <EditorialHero />
+      <ExpertiseSection />
+      <EditorialProjects />
+      <ServicesSection />
+      <AboutSection />
+      <CtaSection />
     </main>
   )
 }
